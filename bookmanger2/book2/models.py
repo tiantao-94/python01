@@ -35,9 +35,9 @@ class PeopleInfo(models.Model):
     # 设置外键约束
     book = models.ForeignKey(BookInfo, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.name
-
     class Meta:
         db_table = 'peopleinfo'
+
+    def __str__(self):
+        return self.name
 
