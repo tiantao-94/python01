@@ -95,6 +95,20 @@ def get(request):
     return HttpResponse('hello get')
 
 
+def get1(request):
+    a=request.GET.get('a')
+    b=request.GET.get('b')
+    print(a, b)
+    return HttpResponse('hello get1')
+
+
+def get2(request):
+    a=request.GET.get('a')
+    b=request.GET.get('b')
+    print(a, b)
+    return HttpResponse('hello get2')
+
+
 # 请求体发送数据
 def post(request):
     a = request.POST.get('a')
