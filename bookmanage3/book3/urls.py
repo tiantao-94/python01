@@ -1,6 +1,6 @@
 from django.urls import path
 from book3.views import index, register,register1,register2, goods,get,post
-from book3.views import json
+from book3.views import json,json1,json2
 
 # # 1.定义转换器
 # class MobileConverter:
@@ -18,9 +18,12 @@ urlpatterns = [
     path('register/', register),
     path('register1/', register1),
     path('register2/', register2),
+    path('json/', json),
+    path('json1/', json1),
+    path('json2/', json2),
     path('<city_id>/<good_id>/', goods),
     path('get/', get),
     path('post/', post),
-    path('json/', json)
+
     # path('cookie/',cookie)
 ]

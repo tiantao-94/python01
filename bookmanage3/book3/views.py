@@ -47,6 +47,26 @@ def json(request):
     print(body_dict)
     return HttpResponse('json')
 
+def json1(request):
+    # json不能通过request.post来接收数据
+    body = request.body
+    # 获取json类型的字符串
+    body_str=body.decode()
+    # 转换成python中的字符串类型
+    import json
+    body_dric=json.loads(body_str)
+    print(body_dric)
+    return HttpResponse('hello json1')
+
+def json2(request):
+    body=request.body
+    # 获取字符串类型
+    body_str=body.decode()
+    # 转换为python字符串 导入json包
+    import json
+    body_dict=json.loads(body_str)
+    print(body_dict)
+    return HttpResponse('hello json2')
 
 # url路径方式请求
 def goods(request, city_id, good_id):
