@@ -1,6 +1,26 @@
 from django.urls import path
-from book3.views import index
+from book3.views import index, register,register1,register2, goods,get,post
+from book3.views import json
+
+# # 1.定义转换器
+# class MobileConverter:
+#     # 验证数据的关键是:正则
+#     regex ='1[3-9]\d{9}'
+#
+#     # 验证完成,没有问题,给视图函数
+#     def to_python(self,value):
+#         return value
+#
+
 
 urlpatterns = [
-    path('index/', index)
+    path('index/', index),
+    path('register/', register),
+    path('register1/', register1),
+    path('register2/', register2),
+    path('<city_id>/<good_id>/', goods),
+    path('get/', get),
+    path('post/', post),
+    path('json/', json)
+    # path('cookie/',cookie)
 ]
