@@ -31,7 +31,9 @@ def register1(request):
 def register2(request):
     data=request.POST
     print(data)
-    return HttpResponse('hello register2')
+    username=data.body
+    # return HttpResponse('hello register2')
+    return JsonResponse
 
 
 # 请求体 raw 发送请求
@@ -68,10 +70,21 @@ def json2(request):
     print(body_dict)
     return HttpResponse('hello json2')
 
+
 # url路径方式请求
 def goods(request, city_id, good_id):
+    print(city_id,good_id)
     return JsonResponse({'city_id':city_id,'good_id':good_id})
+    # return HttpResponse('city_id:city_id,good_id:good_id')
 
+
+def goods1(request,city_id1,good_id1):
+    print(city_id1,good_id1)
+    return JsonResponse({'city_id1':city_id1,'good_id1':good_id1})
+
+
+# def goods(request,city_id,good_id):
+#     return JsonResponse({'city_id':city_id,'good_id':good_id})
 
 # 获取请求路径中的查询字符串参数
 def get(request):

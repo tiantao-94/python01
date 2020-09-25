@@ -1,7 +1,7 @@
 from django.urls import path
 from book3.views import index, register,register1,register2, goods,get,post
 from book3.views import json,json1,json2
-
+from book3.views import goods1
 # # 1.定义转换器
 # class MobileConverter:
 #     # 验证数据的关键是:正则
@@ -22,6 +22,7 @@ urlpatterns = [
     path('json1/', json1),
     path('json2/', json2),
     path('<city_id>/<good_id>/', goods),
+    path('<city_id1>/<good_id1>/', goods1),
     path('get/', get),
     path('post/', post),
 
