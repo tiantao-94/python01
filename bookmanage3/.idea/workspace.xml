@@ -28,8 +28,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book3/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-604">
-              <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+            <state>
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/book3/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+            <state relative-caret-position="-152">
+              <caret line="183" column="21" lean-forward="true" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -80,10 +83,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="428" />
+    <option name="x" value="118" />
     <option name="y" value="27" />
     <option name="width" value="991" />
-    <option name="height" value="747" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,11 +105,6 @@
               <item name="bookmanage3" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
               <item name="book3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookmanage3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
-              <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,15 +170,15 @@
       <updated>1600870781361</updated>
       <workItem from="1600870782604" duration="1308000" />
       <workItem from="1600872117545" duration="35000" />
-      <workItem from="1600971643497" duration="24317000" />
+      <workItem from="1600971643497" duration="28951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25660000" />
+    <option name="totallyTimeSpent" value="30294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="428" y="27" width="991" height="747" extended-state="0" />
+    <frame x="118" y="27" width="991" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16187434" />
@@ -188,7 +186,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3432836" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2274678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,15 +273,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/book3/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-604">
-          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+        <state>
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book3/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        <state relative-caret-position="-152">
+          <caret line="183" column="21" lean-forward="true" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

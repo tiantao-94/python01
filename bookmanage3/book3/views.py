@@ -155,8 +155,51 @@ def response1(request):
     response=JsonResponse(girl_firends, safe=False)
     return response
 
+
 def response3(request):
     response=HttpResponse('res',status=200)
     #响应头
     response['name']='tiaoyao'
     return response
+
+#设置cookie
+def set_cookie(request):
+    #1.获取查询字符串数据
+    username = 'a'
+    password = 'b'
+    # 2. 服务器设置cookie信息
+    # 通过响应对象.set_cookie 方法
+    response = HttpResponse('set_cookie')
+    # key, value=''
+    # max_age 是一个秒数 从响应开始 计数的一个秒数
+    response.set_cookie('name', username, max_age=60 * 60)
+    response.set_cookie('pwd', password)
+    print(username,password)
+    return response
+#获取cookie
+def get_cookie(request):
+    print(request.COOKIES)
+    #从获取字典数据中获取数值
+    name=request.COOKIES.get('name')
+    return HttpResponse(name)
+
+
+#设置session信息
+def set_session(request):
+    # 1. 模拟 获取用户信息
+    username = request.GET.get('username')
+    # 2. 设置session信息
+    # 假如 我们通过模型查询 查询到了 用户的信息
+    user_id = 1
+    request.session['user_id'] = user_id
+    request.session['username'] = username
+    request.session.set_expiry(3600)
+
+    return HttpResponse("set_session")
+
+def get_session(request):
+    user_id = request.session.get('user_id')
+    username = request.session.get('username')
+    content = '{} ,{}'.format(user_id, username)
+
+    return HttpResponse(content)
