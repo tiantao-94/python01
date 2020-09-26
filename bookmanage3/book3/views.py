@@ -118,3 +118,13 @@ def post(request):
     print(b)
     print(alist)
     return HttpResponse('hello post')
+
+
+#转换器版本提取路径传参
+def shop(request,city_id,mobile):
+    print(city_id,mobile)
+    #获取请求信息
+    query_params=request.GET
+    print(query_params)
+    order = query_params.getlist('order')
+    return HttpResponse('我的商店')
