@@ -128,3 +128,35 @@ def shop(request,city_id,mobile):
     print(query_params)
     order = query_params.getlist('order')
     return HttpResponse('我的商店')
+
+#response对象
+def response(request):
+    info = {
+        'name': 'itcast',
+        'address': 'shunyi'}
+    response=JsonResponse(info,status=300)
+    response['name']='xiaoming'
+    return response
+
+def response1(request):
+    girl_firends = [
+        {
+            'name': 'rose',
+            'address': 'shunyi'
+        },
+        {
+            'name': 'jack',
+            'address': 'changping'
+        }
+    ]
+    #girl_firends是列表,我们返回的数据一般是字典类型
+    # JsonResponse 可以把字典转换为json
+    #现在给了一个非字典数据， 出了问题我们自己负责 safe=FALSE
+    response=JsonResponse(girl_firends, safe=False)
+    return response
+
+def response3(request):
+    response=HttpResponse('res',status=200)
+    #响应头
+    response['name']='tiaoyao'
+    return response

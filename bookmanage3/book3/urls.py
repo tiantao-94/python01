@@ -1,6 +1,6 @@
 from django.urls import path
 from book3.views import index, register,register1,register2, goods,get,post,shop
-from book3.views import json,json1,json2
+from book3.views import json,json1,json2,response,response1,response3
 from book3.views import goods1,get1,get2
 from django.urls import converters
 from django.urls.converters import register_converter
@@ -30,6 +30,10 @@ urlpatterns = [
  path('get1/', get1),
  path('get2/', get2),
  path('post/', post),
+ path('response/', response),
+ path('response1/', response1),
+ path('response3/', response3),
+
 
  # path('cookie/',cookie)
 ]
