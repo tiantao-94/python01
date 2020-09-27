@@ -245,6 +245,13 @@ class QueryView(LoginRequiredMixin, View):
     def post(self,request):
         return HttpResponse('post 需要登录查看')
 
+#from django.contrib.auth.mixins import LoginRequiredMixin
+class IndexView(LoginRequiredMixin, View):
+    def get(self,request):
+        return HttpResponse('get 登录后查看')
+    def post(self,request):
+        return HttpResponse('post 登陆后查看')
+
 
 # 测试中间键发方法
 def middleware(request):

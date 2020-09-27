@@ -2,7 +2,7 @@ from django.urls import path
 from book3.views import index, register,register1,register2, goods,get,post,shop
 from book3.views import json,json1,json2,response,response1,response3,LoginView
 from book3.views import goods1,get1,get2,set_cookie,get_cookie,get_session,set_session
-from book3.views import OrderView,middleware, QueryView
+from book3.views import OrderView,middleware, QueryView,IndexView
 from django.urls import converters
 from django.urls.converters import register_converter
 # # 1.定义转换器
@@ -41,7 +41,8 @@ urlpatterns = [
  path('login/', LoginView.as_view()),
  path('order/', OrderView.as_view()),
  path('middleware/',middleware),
- path('query/', QueryView.as_view())
+ path('query/', QueryView.as_view()),
+ path('home/', IndexView.as_view())
 
 
 
