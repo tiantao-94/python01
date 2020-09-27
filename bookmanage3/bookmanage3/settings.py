@@ -48,6 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 注册中间键
+    'book3.middleware.TestMiddleware1',
+
 ]
 
 ROOT_URLCONF = 'bookmanage3.urls'
@@ -63,9 +66,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 注册中间键
-                'book.middleware.TestMiddleWare',
-                'book.middleware.TestMiddleWare2',
+
+
             ],
         },
     },

@@ -236,3 +236,9 @@ class OrderView(LoginRequiredMixin,View):
 
     def post(self,request):
         return HttpResponse('POST 我的订单页面，这个页面必须登录')
+
+
+# 测试中间键发方法
+def middleware(request):
+    print('view 视图被调用')
+    return HttpResponse('OK')
