@@ -1,10 +1,18 @@
 from django.shortcuts import render, redirect
 
 # Create your views here.
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse
 from django.http import JsonResponse
 from book3.models import BookInfo
+from django.views.generic import View
+#
+# def login(request):
+#     print(request.method)
+#     if request.method =='GET':
+#         return HttpResponse('get 逻辑')
+#     else:
+#         return HttpResponse('post 逻辑')
 
 
 def index(request):
@@ -203,3 +211,28 @@ def get_session(request):
     content = '{} ,{}'.format(user_id, username)
 
     return HttpResponse(content)
+
+# 类视图判断发送的请求类型
+class LoginView(View):
+    def get(self,request):
+        return HttpResponse('get get')
+
+    def post(self,request):
+        return HttpResponse('post post')
+
+# 类视图的多继承重写dispatch
+# from django.contrib.auth.mixins import LoginRequiredMixin
+# LoginRequiredMixin 作用判断 只有登录的用户才能访问界面
+class OrderView(LoginRequiredMixin,View):
+
+    def get(self,request):
+
+        #模拟了一个标记位
+        # isLogin=False
+        # if not isLogin:
+        #     return HttpResponse('你没有登录，跳转到整理页面中～～～～')
+
+        return HttpResponse('GET 我的订单页面，这个页面必须登录')
+
+    def post(self,request):
+        return HttpResponse('POST 我的订单页面，这个页面必须登录')

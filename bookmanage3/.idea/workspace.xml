@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83112e6c-160c-4495-875c-8048c25e02c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/book3/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book3/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book3/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmanage3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookmanage3/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bookmanage3/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-929">
-              <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="50" />
+            <state relative-caret-position="362">
+              <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -28,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book3/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="14">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -37,14 +39,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book3/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="183" column="21" lean-forward="true" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
+            <state relative-caret-position="146">
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/book3/middleware.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book3/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -66,27 +86,17 @@
       <list>
         <option value="$PROJECT_DIR$/bookmanage3/urls.py" />
         <option value="$PROJECT_DIR$/book3/models.py" />
-        <option value="$PROJECT_DIR$/bookmanage3/settings.py" />
-        <option value="$PROJECT_DIR$/book3/urls.py" />
         <option value="$PROJECT_DIR$/book3/views.py" />
+        <option value="$PROJECT_DIR$/book3/urls.py" />
+        <option value="$PROJECT_DIR$/book3/middleware.py" />
+        <option value="$PROJECT_DIR$/bookmanage3/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/bookmanage3.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="118" />
-    <option name="y" value="27" />
-    <option name="width" value="991" />
-    <option name="height" value="843" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="19" />
+    <option name="width" value="955" />
+    <option name="height" value="663" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -94,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,11 +117,15 @@
               <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
               <item name="book3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bookmanage3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
+              <item name="bookmanage3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,22 +186,23 @@
       <workItem from="1600870782604" duration="1308000" />
       <workItem from="1600872117545" duration="35000" />
       <workItem from="1600971643497" duration="28951000" />
+      <workItem from="1601177540864" duration="8304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30294000" />
+    <option name="totallyTimeSpent" value="38598000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="27" width="991" height="843" extended-state="0" />
+    <frame x="67" y="25" width="1847" height="859" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16187434" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08690808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2274678" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22237763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,9 +247,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/book3/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/book3/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -264,17 +277,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bookmanage3/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-929">
-          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book3/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="14">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -283,11 +289,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/book3/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="183" column="21" lean-forward="true" selection-start-line="183" selection-start-column="21" selection-end-line="183" selection-end-column="21" />
+        <state relative-caret-position="146">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookmanage3/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book3/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book3/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
