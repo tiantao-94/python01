@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 注册中间键
     'book3.middleware.TestMiddleware1',
+    'book3.middleware.TestMiddleware2',
 
 ]
 
