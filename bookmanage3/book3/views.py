@@ -237,6 +237,14 @@ class OrderView(LoginRequiredMixin,View):
     def post(self,request):
         return HttpResponse('POST 我的订单页面，这个页面必须登录')
 
+#类试图的多继承
+class QueryView(LoginRequiredMixin, View):
+    def get(self,quest):
+        return HttpResponse('get 需要登录显示页面')
+
+    def post(self,request):
+        return HttpResponse('post 需要登录查看')
+
 
 # 测试中间键发方法
 def middleware(request):
